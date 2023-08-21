@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _print_char - print character
  * @list: pointer
@@ -7,6 +8,8 @@
 */
 int _print_char(va_list list)
 {
-	_putchar(va_arg(list, int));
+	char c = (char)va_arg(list, int);
+
+	write(1, &c, 1);
 	return (1);
 }

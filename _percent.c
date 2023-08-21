@@ -23,5 +23,9 @@ int _percent(char symbol, va_list list)
 		}
 		i++;
 	}
-	return (0);
+	char c = '%';
+
+	write(1, &c, 1);
+	write(1, &symbol, 1);
+	return (2);
 }

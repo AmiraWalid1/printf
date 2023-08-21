@@ -7,5 +7,8 @@
 */
 int _print_string(va_list list)
 {
-	return (_puts(va_arg(list, char *)));
+	char *str = va_arg(list, char *);
+
+	write(1, str, strlen(str));
+	return (strlen(str));
 }
