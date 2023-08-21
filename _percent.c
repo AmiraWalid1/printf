@@ -14,6 +14,7 @@ int _percent(char symbol, va_list list)
 		{'s', _print_string}
 	};
 	int i = 0;
+	char percent = '%';
 
 	while (i < 2)
 	{
@@ -23,9 +24,9 @@ int _percent(char symbol, va_list list)
 		}
 		i++;
 	}
-	char c = '%';
+	
 
-	write(1, &c, 1);
+	write(1, &percent, 1);
 	write(1, &symbol, 1);
 	return (2);
 }
