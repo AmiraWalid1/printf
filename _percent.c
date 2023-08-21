@@ -11,12 +11,13 @@ int _percent(char symbol, va_list list)
 {
 	printer p[] = {
 		{'c', _print_char},
-		{'s', _print_string}
+		{'s', _print_string},
+		{'b', _UnsignedIntToBinary}
 	};
 	int i = 0;
 	char percent = '%';
 
-	while (i < 2)
+	while (i < 3)
 	{
 		if (symbol == p[i].symbol)
 		{
