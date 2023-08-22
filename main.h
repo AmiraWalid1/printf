@@ -27,7 +27,10 @@ int _UnsignedIntToBinary(va_list list);
 int _print_number(va_list list);
 int _print_number_rec(int n);
 int _print_IntToOctal(va_list list);
-int _print_IntToHexa(va_list list);
+int _print_IntToHexaLarge(va_list list);
+int _print_IntToHexaSmall(va_list list);
+int _printUnsignedInt(va_list list);
+int _print_number_recUnsigned(int n);
 int _percent(char symbol, va_list list);
 
 

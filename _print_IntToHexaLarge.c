@@ -1,19 +1,22 @@
 #include "main.h"
 /**
- * _print_IntToHexa - convert int argumen to octal.
+ * _print_IntToHexaLarge - convert int argumen to octal.
  * @list: pointer
  *
  * Return: len of int in binary
 */
-int _print_IntToHexa(va_list list)
+int _print_IntToHexaLarge(va_list list)
 {
 	int i = 0, num = va_arg(list, int), len = 0, val;
 	char hexaNum[100];
 
 	while (num)
 	{
-		hexaNum[i] = num % 16;
-		val = num;
+		val = num % 16;
+		if (val < 10)
+			hexaNum[i] = val + '0';
+		else
+			hexaNum[i] = val + 55;
 		num /= 16;
 		i++;
 	}
@@ -22,5 +25,6 @@ int _print_IntToHexa(va_list list)
 		write(1, &hexaNum[i], 1);
 		len++;
 	}
+	
 	return (len);
 }
