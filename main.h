@@ -22,6 +22,8 @@ int _puts(char *str);
 int _print_char(va_list list);
 int _print_string(va_list list);
 int _UnsignedIntToBinary(va_list list);
+int _print_number(va_list list);
+void _print(int n);
 int _percent(char symbol, va_list list);
 
 
