@@ -20,7 +20,7 @@ int _print_IntToHexa(va_list list)
 	}
 	for (i = i - 1 ; i >= 0 ; i--)
 	{
-		write(1, hexaNum[i], 1);
+		write(1, &hexaNum[i], 1);
 		len++;
 	}
 	return (len);
