@@ -10,7 +10,6 @@ int _print_IntToHexa(va_list list)
 	int i = 0, num = va_arg(list, int), len = 0, val;
 	char hexaNum[100];
 	
-
 	while (num)
 	{
 		hexaNum[i] = num % 16;
