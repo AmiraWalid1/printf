@@ -29,8 +29,15 @@ int _print_number_rec(int n)
 int _print_number(va_list list)
 {
 	int n = va_arg(list, int);
+	char sign = '-';
 
 	cnt = 0;
+	if (n < 0)
+	{
+		write(1, &sign, 1);
+		n *= -1;
+		cnt++;
+	}
 	_print_number_rec(n);
 	return (cnt);
 }
