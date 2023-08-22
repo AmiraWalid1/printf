@@ -8,7 +8,7 @@
 int _print_number_rec(int n)
 {
 	char number;
-	
+
 	if (n != 0)
 	{	cnt++;
 		_print_number_rec(n / 10);
