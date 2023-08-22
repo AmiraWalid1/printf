@@ -14,12 +14,15 @@ int _percent(char symbol, va_list list)
 		{'s', _print_string},
 		{'b', _UnsignedIntToBinary},
 		{'d', _print_number},
-		{'i', _print_number}
+		{'i', _print_number},
+		{'o',_print_IntToOctal},
+		{'x',_print_IntToHexa},
+		{'X',_print_IntToHexa}
 	};
 	int i = 0;
 	char percent = '%';
 
-	while (i < 5)
+	while (i < 6)
 	{
 		if (symbol == p[i].symbol)
 		{
