@@ -25,6 +25,5 @@ int _print_IntToHexaLarge(va_list list)
 		write(1, &hexaNum[i], 1);
 		len++;
 	}
-	
 	return (len);
 }
