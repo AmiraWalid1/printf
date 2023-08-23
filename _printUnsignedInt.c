@@ -25,7 +25,7 @@ int _print_number_recUnsigned(unsigned int n)
 */
 int _printUnsignedInt(va_list list)
 {
-	int n = va_arg(list, unsigned int);
+	unsigned int n = va_arg(list, unsigned int);
 	char Number;
 
 	cnt = 0;
