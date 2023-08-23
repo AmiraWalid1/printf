@@ -30,7 +30,7 @@ int _print_IntToOctal(va_list list);
 int _print_IntToHexaLarge(va_list list);
 int _print_IntToHexaSmall(va_list list);
 int _printUnsignedInt(va_list list);
-int _print_number_recUnsigned(unsigned int n);
+signed int _print_number_recUnsigned(unsigned int n);
 int _percent(char symbol, va_list list);
 
 

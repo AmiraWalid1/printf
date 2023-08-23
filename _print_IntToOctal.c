@@ -7,7 +7,7 @@
 */
 int _print_IntToOctal(va_list list)
 {
-	int octalNum[32], i = 0, num = va_arg(list, int), len = 0;
+	int octalNum[100], i = 0, num = va_arg(list, int), len = 0;
 	char curr_byte;
 
 	while (num)

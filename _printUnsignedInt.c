@@ -5,7 +5,7 @@
  *
  * Return: length of num
 */
-int _print_number_recUnsigned(unsigned int n)
+signed int _print_number_recUnsigned(unsigned int n)
 {
 	char number;
 
