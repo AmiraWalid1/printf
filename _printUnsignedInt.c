@@ -36,6 +36,8 @@ int _printUnsignedInt(va_list list)
 		cnt++;
 	}
 	if (n > 0)
-	_print_number_recUnsigned(n);
+	{
+		_print_number_recUnsigned(n);
+	}
 	return (cnt);
 }

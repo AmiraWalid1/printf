@@ -18,7 +18,7 @@ typedef struct printer
 } printer;
 static int __attribute__((__unused__))cnt;
 
-int _printf(const char *format, ...);
+int _printf(const char *formatbetty, ...);
 void _putchar(char c);
 int _puts(char *str);
 int _print_char(va_list list);
